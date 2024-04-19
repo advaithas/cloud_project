@@ -17,8 +17,8 @@ pipeline {
 
         
                 stage('Build Docker Images') {
-            steps {
-                dir('uc1') {
+           	steps {
+
                     script {
                         docker.withRegistry('https://registry.hub.docker.com','docker-registry-credentials')
                         {
@@ -33,7 +33,7 @@ pipeline {
                             bat 'docker push advaitha246/uc3-service:latest'          	
                         }
                     }
-                }
+                
             }
         }
 
