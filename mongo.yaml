@@ -4,4 +4,3 @@ metadata:
   name: mongodb-config
 data:
   MURL: mongodb+srv://<user>:<passwd>@cluster0.v058jii.mongodb.net/cc?retryWrites=true&w=majority
- 
